@@ -176,31 +176,78 @@ public class Ejercicio12
         System.out.println("esAdulto: " + esAdulto);
     */
     
-    //Ejercicio 22
-    ///*
+    //Ejercicio 22 - Conversión de tipos
+    /*
         //Convertir String a int
         int edad = Integer.parseInt("20");
         System.out.println("edad: " + edad);
         
+        //String a double
         double valorPI = Double.parseDouble("3.1416");
         System.out.println("valorPI: " + valorPI);
         
+        //Caracter de String a char
         char charVar = "Hola".charAt(1);
         System.out.println("charVar: " + charVar);
-        
+
+        //String de entrada a Integer
         Scanner scanner = new Scanner(System.in);
         edad = Integer.parseInt( scanner.nextLine() );
         System.out.println("edad: " + edad);
         
+        //Caracter de String de entrada a char
         char caracter = scanner.nextLine().charAt(0);
         System.out.println("caracter: " + caracter);
         
+        //Integer a String
         String edadText = String.valueOf(25);
         System.out.println("edadText: " + edadText);
         
+        //Casteo de short a byte
         short shortVar = 10;
         byte byteVar = (byte)shortVar;
         System.out.println("byteVar: " + byteVar);
-    //*/
+    */
+    
+    //Ejercicio 24 - Operadores en java
+    /*
+        int a = 3;
+        int b = 2;
+        int resultado = a + b;
+        System.out.println("resultado: " + resultado);
+        System.out.println("resultado: " + (a + b));
+        
+        resultado = a - b;
+        System.out.println("resultado resta: " + resultado);
+        System.out.println("resultado resta: " + (a - b));
+        
+        resultado = a * b;
+        System.out.println("resultado multiplicacion: " + resultado);
+        System.out.println("resultado multiplicacion: " + (a * b));
+        
+        float resultado2 = Float.parseFloat( String.valueOf(a) ) / b;
+        System.out.println("resultado division: " + resultado2);
+        
+        resultado = a % b;
+        System.out.println("resultado resto: " + resultado);
+        
+        resultado = a % 2;
+        System.out.println("resultado: " + resultado);
+        
+        resultado = b % 2;
+        System.out.println("resultado: " + resultado);
+        
+        if( resultado == 0 )
+        {
+            System.out.println("Es numero par");
+        }
+        else
+        {
+            System.out.println("Es numero impar");
+        }
+    */
+        
+        
+        
     }
 }
