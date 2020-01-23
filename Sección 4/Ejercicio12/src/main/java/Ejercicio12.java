@@ -248,7 +248,7 @@ public class Ejercicio12
     */
         
     //25. Ejercicio: Operadores de Asignación en Java
-    ///*
+    /*
         int a = 3, b = 2;
         
         int c = a + 5 - b;
@@ -262,7 +262,134 @@ public class Ejercicio12
         
         b-=1;
         System.out.println("b: " + b );
-    //*/
+    */
+    //26. Ejercicio: Operadores Unarios en Java
+    /*
+        int a = 3;
+        int b = -a;
+        System.out.println("b: " + b);
         
+        boolean c = true;
+        boolean d = !c;
+        System.out.println("d: " + d);
+        
+        int e = 3;
+        int f = ++e;
+        System.out.println("e: " + e);
+        System.out.println("f: " + f);
+        
+        int g = 5;
+        int h = g++;
+        System.out.println("g: " + g);
+        System.out.println("h: " + h);
+        
+        int i = 2;
+        int j = --i;
+        System.out.println("i: " + i);
+        System.out.println("j: " + j);
+        
+        int k = 4;
+        int l = k--;
+        System.out.println("i: " + k);
+        System.out.println("j: " + l);
+    */
+    //27. Ejercicio: Operadores de Igualdad y Relacionales en Java
+    /*
+        int a=3, b=2;
+        
+        boolean c = (a == b);
+        System.out.println("c: " + c);
+        
+        c = (2 == b);
+        System.out.println("c: " + c);
+        
+        c = (a != b);
+        System.out.println("c: " + c);
+        
+        c = (a != 3);
+        System.out.println("c: " + c);
+        
+        String cadena = "Hola";
+        String cadena2 = "Adios";
+        
+        System.out.println(cadena.equals(cadena));
+        
+        boolean d = (a < b);
+        System.out.println("d: " + d);
+        
+        d = (a > b);
+        System.out.println("d: " + d);
+        
+        d = (a <= b);
+        System.out.println("d: " + d);
+        
+        d = (a >= b);
+        System.out.println("d: " + d);
+        
+        if( (a % 2) == 0 )
+        {
+            System.out.println("El numero es par");
+        }
+        else
+        {
+            System.out.println("El numero es impar");
+        }
+        
+        int edad = 8;
+        int adulto = 18;
+        
+        if( edad >= adulto )
+        {
+            System.out.println("Es adulto");
+        }
+        else
+        {
+            System.out.println("No es adulto");
+        }
+    */
+    //28. Ejercicio: Operadores Condicionales en Java
+        /*
+        int a = 10;
+        int min = 0, max = 10;
+        if( a >= min && a <= max )
+        {
+            System.out.println("En rango");
+        }
+        else
+        {
+            System.out.println("Fuera de rango");
+        }
+        
+        boolean vacaciones = false, diaLibre = true;
+        if( vacaciones == true || diaLibre == true )
+        {
+            System.out.println("Puede asistir");
+        }
+        else
+        {
+            System.out.println("No puede asistir");
+        }
+        
+        */
+        
+    //29. Ejercicio: Operador Ternario en Java
+    /*
+        //var variable = (expresion)?true:false
+        var resultado = (3 >= 2)?true:false;
+        System.out.println("resultado: " + resultado);
+        
+        resultado = (1 >= 2)?true:false;
+        System.out.println("resultado: " + resultado);
+        
+        String resultado2 = (3 >= 2)?"verdadero":"falso";
+        System.out.println("resultado2: " + resultado2);
+        
+        var resultado3 = (1 > 2)?"Verdadero":false;
+        System.out.println("resultado3: " + resultado3);
+        
+        int numero = 7;
+        var par = (numero % 2 == 0) ? "Numero par" : "Numero impar";
+        System.out.println("par: " + par);
+    */
     }
 }
