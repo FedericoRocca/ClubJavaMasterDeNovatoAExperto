@@ -391,5 +391,309 @@ public class Ejercicio12
         var par = (numero % 2 == 0) ? "Numero par" : "Numero impar";
         System.out.println("par: " + par);
     */
+    //30. Ejercicio: Precedencia de Operadores en Java
+    /*
+        var x = 5;
+        var y = 10;
+        var z = ++x + y--;
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+        System.out.println("z: " + z);
+        
+        System.out.println("\nEjemplo de precedencia de operadores");
+        var resultado = 4 + 5 * 6 / 3;
+        System.out.println("resultado: " + resultado);
+        
+        resultado = (4 + 5) * 6 / 3;
+        System.out.println("resultado: " + resultado);
+        
+        resultado = (++x + 5) * 6 / 3;
+        System.out.println("resultado: " + resultado);
+        
+    */
+    //34. Ejercicio Manejo de if-else
+    /*
+        var condicion = true;
+        if(condicion)
+        {
+            System.out.println("Verdadero");
+        }
+        else
+        {
+            System.out.println("Falso");
+        }
+        
+        int numero = 1;
+        String numeroText = "Numero desconocido";
+                
+        if( numero == 1 )
+        {
+            numeroText = "Uno";
+        }
+        else if( numero == 2 )
+        {
+            numeroText = "Dos";
+        }
+        else if( numero == 3 )
+        {
+            numeroText = "Tres";
+        }
+        
+        System.out.println("numeroText: " + numeroText);
+    */
+        
+    //35. Ejercicio: Manejo de if-else 2
+    /*
+        int mes;
+        String estacion = null;
+        Scanner ingreso = new Scanner(System.in);
+        System.out.print("Ingresá el mes: ");
+        mes = ingreso.nextInt();
+        
+        if( mes == 1 || mes == 2 || mes == 12)
+        {
+            estacion = "Invierno";
+        }
+        else if( mes == 3 || mes == 4 || mes == 5 )
+        {
+            estacion = "Primavera";
+        }
+        else if( mes == 6 || mes == 7 || mes == 8 )
+        {
+            estacion = "Verano";
+        }
+        else if( mes == 9 || mes == 10 || mes == 11 )
+        {
+            estacion = "Otoño";
+        }
+        else
+        {
+            estacion = "Mes invalido";
+        }
+        System.out.println("Estación: " + estacion + " para el mes " + mes);
+    */
+        
+    //36. Ejercicio: Ejercicio Switch
+    /*
+        int numero;
+        Scanner ingreso = new Scanner(System.in);
+        System.out.print("Ingresá el número: ");
+        numero = ingreso.nextInt();
+        String numeroTexto;
+        
+        switch( numero )
+        {
+            case 0:
+                numeroTexto = "Cero";
+                break;
+                
+            case 1:
+                numeroTexto = "Uno";
+                break;
+                
+            case 2:
+                numeroTexto = "Dos";
+                break;
+                
+            case 3:
+                numeroTexto = "Tres";
+                break;
+                
+            case 4:
+                numeroTexto = "Cuatro";
+                break;
+                
+            case 5:
+                numeroTexto = "Cinco";
+                break;
+                
+            case 6:
+                numeroTexto = "Seis";
+                break;
+                
+            case 7:
+                numeroTexto = "Siete";
+                break;
+                
+            case 8:
+                numeroTexto = "Ocho";
+                break;
+                
+            case 9:
+                numeroTexto = "Nueve";
+                break;
+                
+            default:
+                numeroTexto = "Número incorrecto";
+                break;
+        }
+        
+        System.out.println("El numero es: " + numeroTexto);
+    */
+    
+    //37. Ejercicio: Cálculo estación del año con Switch
+    /*
+        Scanner ingreso = new Scanner(System.in);
+        System.out.print("Ingresá el mes: ");
+        int mes = ingreso.nextInt();
+        String estacion = null;
+        
+        switch(mes)
+        {
+            case 1:
+            case 2:
+            case 12:
+                estacion = "Invierno";
+                break;
+                
+            case 3:
+            case 4:
+            case 5:
+                estacion = "Primavera";
+                break;
+                
+            case 6:
+            case 7:
+            case 8:
+                estacion = "Verano";
+                break;
+                
+            case 9:
+            case 10:
+            case 11:
+                estacion = "Otoño";
+                break;
+
+        }
+        if( estacion != null )
+        {
+            System.out.println("La estación para el mes " + mes + " es " + estacion);
+        }
+        else
+        {
+            System.out.println("El mes ingresado es incorrecto");
+        }
+    */
+    
+    //41. Ejercicio: Ciclo While
+    /*
+        int contador = 0;
+        while(contador < 3)
+        {
+            System.out.println("Vuelta " + contador);
+            contador++;
+        }
+        
+        contador = 0;
+        do
+        {
+            System.out.println("Vuelta con do while: " + contador);
+            contador++;
+        } while( contador > 3 );
+    */
+    
+    //42. Ejercicio: Ciclo for
+    /*
+        for(int i = 0; i < 3; i++)
+        {
+            System.out.println("Vuelta " + i + " con for");
+        }
+    */
+    
+    //43. Ejercicio: Palabras Break y Continue en Java
+    /*
+        for(int i = 0; i < 3; i++)
+        {
+            if( i % 2 == 0 )
+            {
+                System.out.println(i);
+                break;
+            }
+        }
+        
+        for(int i = 0; i < 3; i++)
+        {
+            if( i % 2 != 0 )
+            {
+                continue;
+            }
+            System.out.println("i: " + i);
+        }
+    */
+    
+    //44. Ejercicio: Uso de Etiquetas (Labels) en Java
+    ///*
+        inicio:
+        for(int i = 0; i < 3; i++)
+        {
+            if( i % 2 != 0 )
+            {
+                continue inicio;
+            }
+            System.out.println("i: " + i);
+        }
+        
+        otroLabel:
+        for(int i = 0; i < 3; i++)
+        {
+            if( i % 2 != 0 )
+            {
+                System.out.println("i: " + i);
+                break otroLabel;
+            }
+        }
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    //
+    ///*
+        
+    //*/
+    
+    
     }
 }
