@@ -1,7 +1,7 @@
 //46. Ejercicio: Creación de Clases en Java
 public class Persona {
-    String nombre;
-    String apellido;
+    private String nombre;
+    private String apellido;
     
     public void showNombre()
     {
@@ -11,6 +11,11 @@ public class Persona {
     public void showApellido()
     {
         System.out.println("Apellido: " + apellido);
+    }
+    
+    public void showNombres()
+    {
+        System.out.println(nombre + " " + apellido);
     }
     
     public String getNombre()
